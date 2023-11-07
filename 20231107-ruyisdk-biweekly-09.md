@@ -13,3 +13,5 @@
 
 
 ## GCC
+
+继续开发RISC-V Profiles，Bitmanip/Scalar crypto intrinsic在工具链上的支持，开始准备向上游提交RVV 0.7&1.0的兼容性patch。完成了RVP向gcc13的porting工作，目前仍在review修改中。
