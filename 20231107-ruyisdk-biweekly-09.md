@@ -29,3 +29,5 @@
 对标Eclipse IDE for Embedded C/C++ Developers包含的主要插件，基于Eclipse生成一个自定义的Eclipse Distribution，形成RuyiSDK IDE的初始打包过程/程序。要求首先能够产出功能等同于Eclipse IDE for Embedded C/C++ Developers的Linux环境下IDE安装程序，并在此基础上完成定制界面定制。
 
 ## GCC
+
+继续开发RISC-V Profiles，Bitmanip/Scalar crypto intrinsic在工具链上的支持，开始准备向上游提交RVV 0.7&1.0的兼容性patch。完成了RVP向gcc13的porting工作，目前仍在review修改中。
