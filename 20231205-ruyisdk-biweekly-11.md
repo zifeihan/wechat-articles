@@ -5,6 +5,20 @@
 
 ## 包管理器
 
+项目地址：https://github.com/ruyisdk/ruyi
+
+Ruyi 0.2.x 分支的功能开发已完成，代码已冻结，进入测试阶段。
+
+目前已经支持了以下功能：
+
+* 源代码包的解压式安装。
+* 带或不带 sysroot 的虚拟环境创建。
+* 虚拟环境内自带 CMake、Meson 交叉编译定义文件。
+* LLVM/Clang 工具链的集成；需要搭配 GCC 工具链的 sysroot 以及 gcc 支持库使用。
+* QEMU linux-user 静态模拟器的集成，可以通过 `ruyi-qemu` wrapper 方便地调用，也在虚拟环境中自带了适用 `systemd-binfmt` 的配置文件。
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
+
 ## IDE
 
 IDE 开发者还在招聘中，本期暂无开发进展。
