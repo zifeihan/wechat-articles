@@ -6,6 +6,18 @@
 
 ## 包管理器
 
+项目地址：https://github.com/ruyisdk/ruyi
+
+Ruyi 0.2 在上周五成功发布了，可移步 [GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。发布前做了以下的修复与功能改进：
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.2.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.2.0/
+
+* [Issue #12](https://github.com/ruyisdk/ruyi/issues/12) 的进一步用户体验优化：在需要用到某个命令如 `tar` 或 `zstd` 而当前环境内却未提供的时候，提前报错退出，而不仅仅只是警告然后在实际调用时向用户展示满屏的 Python backtrace。
+* [Issue #24](https://github.com/ruyisdk/ruyi/issues/24)：GNU 工具链包中的 GDB 先前非预期地动态链接到了构建环境中的 Python 3.8，导致这些 `gdb` 二进制在 Python 版本不是 3.8.x 的系统上无法工作。考虑到 Python 版本的多样性，以及目前 Ruyi 所计划支持的宿主发行版均已提供 `gdb` 包，目前暂时先禁用了软件源中三种 GNU 工具链包的 GDB Python 支持。后续将调研以静态链接的方式恢复支持。
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
+
 ## IDE
 
 本期暂无进展。
