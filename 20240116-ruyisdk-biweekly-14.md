@@ -7,10 +7,7 @@
 
 项目地址：https://github.com/ruyisdk/ruyi
 
-RuyiSDK 包管理器 `ruyi` 的 0.3.0 版本已于今日发布，您可移步 [GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
-
-[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.3.0
-[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.3.0/
+RuyiSDK 包管理器 `ruyi` 的 0.3.0 版本已于今日发布，您可移步 [GitHub Releases][GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
 
 本次的更新内容主要有：
 
@@ -25,6 +22,11 @@ RuyiSDK 包管理器 `ruyi` 的 0.3.0 版本已于今日发布，您可移步 [G
 
 ## IDE
 
+IDE 加强了基于 Eclipse 和 Vscode 的插件调研，本期跑通了 Rust 在 Eclipse 和 Vscode 的交叉编译。
 
 ## GCC
+
 根据上游的意见，重新提交了Zc*与Intrinsic支持的patch，继续移植RUYISDK GCC11/12版本
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.3.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.3.0/
