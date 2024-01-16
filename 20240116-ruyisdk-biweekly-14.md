@@ -10,3 +10,4 @@
 
 
 ## GCC
+根据上游的意见，重新提交了Zc*与Intrinsic支持的patch，继续移植RUYISDK GCC11/12版本
