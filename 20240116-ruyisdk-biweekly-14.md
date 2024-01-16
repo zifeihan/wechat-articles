@@ -27,3 +27,4 @@ RuyiSDK 包管理器 `ruyi` 的 0.3.0 版本已于今日发布，您可移步 [G
 
 
 ## GCC
+根据上游的意见，重新提交了Zc*与Intrinsic支持的patch，继续移植RUYISDK GCC11/12版本
