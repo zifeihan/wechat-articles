@@ -13,6 +13,7 @@
 IDE部分主要开展了 Eclipse 和 VSCode 对C、Rust、Golang 进行了RISC-V架构上编译和调试现有插件的调研，目前整体来说C、Rust和Golang在RISC-V架构下的交叉编译可走通，但是调试插件还或多或少存在一些问题，缺乏成熟插件甚至无可用调试插件支持。
 
 ## GCC
+上游已经接受了Bitmanip/Scalar Crypto intrinsic的支持，对Zcmp/Zcmt的patch提出了新的修改意见，目前正在修改中。 持续推进RUYISDK GCC的多版本支持工作，预计下个月提交发布版本进行打包测试。
 
 
 ## OpenJDK
