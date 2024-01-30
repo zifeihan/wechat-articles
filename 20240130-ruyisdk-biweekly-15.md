@@ -9,6 +9,29 @@
 
 ## 包管理器
 
+RuyiSDK 0.4 对应的包管理器版本也为 0.4.0，已于今日发布。您可移步
+[GitHub Releases][GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.4.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.4.0/
+
+本次更新主要包含了以下内容：
+
+* `ruyi device provision` 会将 `fastboot` 的调用以 `sudo` 包装了。
+* `ruyi self uninstall --purge` 不会忘记删除 `~/.local/state/ruyi` 目录了。
+* 从软件源下载文件失败时，会提供一些有助于用户自助排查问题的提示讯息了。
+* 为提供更稳定的服务，RuyiSDK 软件源仓库现已搬迁至 GitHub。
+  视您所在地区或组织所可能设置的网络访问限制，您可能需要采取一些措施，
+  以便能继续与 RuyiSDK 软件源同步。
+* 在 RuyiSDK 软件源中，新增提供了上述四款 RISC-V 开发板的系统镜像包、运行于
+  amd64 架构的 RISC-V QEMU 系统模拟器二进制包，以及运行于 riscv64 架构的
+  DynamoRIO 二进制包。
+
+请注意：原先位置的 RuyiSDK 软件源仓库将在 2024-02-01 前后停止更新。请尽早更新您的
+`ruyi` 版本以自动迁移到最新配置。
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
+
 ## IDE
 IDE部分主要开展了 Eclipse 和 VSCode 对C、Rust、Golang 进行了RISC-V架构上编译和调试现有插件的调研，目前整体来说C、Rust和Golang在RISC-V架构下的交叉编译可走通，但是调试插件还或多或少存在一些问题，缺乏成熟插件甚至无可用调试插件支持。
 
