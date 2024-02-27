@@ -2,9 +2,18 @@
 
 ## 卷首语
 
+如意SDK V0.5 版本如期发布，此版本继续扩展了系统安装器支持的 RISC-V 开发板，添加了对 SiFive HiFive Unmatched 、Canaan Kendryte K230  两款RISC-V 开发板的支持，包括镜像信息的维护与下载、开发板系统的安装引导。此外如意软件源更新了使用 th1520 的 plctxthead-linux-gnu。并且集成并发布了 PLCT GNU 小队新发布的 GNU RV64ILP32 工具链。
+
+更多更新详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 如意SDK V0.6 版本将在 3 月 12 日发布。
+
+
 ## 包管理器
 
 ## IDE
+
+IDE部分主要开展了 Dart 、Chisel RISC-V架构上编译和调试现有插件的调研。Dart 目前可以借助 JIT 或 AOT 在 linux 系统本机编译或运行 RISC-V 目标的程序 (实验性)，不能在本机进行交叉编译 (除 flutter)。
+
+Chisel所需的 Verilog仿真器 Verilator 目前在部分Linux（如openEuler）发行版支持还需完善，此外运行过程中遇到一些问题还在继续了解中。Chisel 对 RISC-V 项目的支持目前比较普及，国内很多RISC-V处理器设计相关项目均采用的Chisel，如香山。
 
 ## GCC
 
@@ -39,9 +48,15 @@
 相关参考链接：https://gcc.gnu.org/pipermail/gcc-patches/2024-January/643490.html
 
 ## OpenJDK
+
 OpenJDK RV64 继续持续负责OpenJDK RISC-V相关代码的日常开发、测试、代码检视和架构看护。
+
 1. 完成阿里提交的jdk11u linux-riscv64 代码检视和测试, 目前已经合并到了 riscv-port-jdk11u 仓库
 2. 为OpenJDK 主线 linux-riscv64 后端轻量级锁进行了重入锁实现等
 3. 检视/测试 OpenJDK 社区关于加解密 intrinsic 的实现等
 
 ## V8
+
+1. 向V8上游提交了RISCV64 Android构建的支持，已合并；
+
+2. 实现了WebAssembly的新特性 Out of Bounds Trap Handling 在RISC-V后端的支持。
