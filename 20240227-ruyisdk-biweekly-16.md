@@ -3,6 +3,7 @@
 ## 卷首语
 
 如意SDK V0.5 版本如期发布，此版本集成并发布了 PLCT GNU 小队新发布的 GNU RV64ILP32 工具链，并更新了适用 th1520 的 plctxthead-linux-gnu 工具链。继续扩展了系统安装器支持的 RISC-V 开发板，添加了对 SiFive HiFive Unmatched 、Canaan Kendryte K230  两款RISC-V 开发板的支持，包括镜像信息的维护与下载、开发板系统的安装引导。
+此外，在如意SDK集成到RISC-V笔记本方面，完成ruyi包管理工具的安装和使用验证，各功能运行正常。还完成了基于oerv23.09软件包依赖的ruyi包管理器工具的rpm打包工作，在openEuler上可以通过 yum install python3-ruyi 方式完成安装。
 
 更多更新详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 如意SDK V0.6 版本将在 3 月 12 日发布。
 
@@ -78,3 +79,7 @@ OpenJDK RV64 继续持续负责OpenJDK RISC-V相关代码的日常开发、测�
 
 1. 向V8上游提交了RISCV64 Android构建的支持，已合并；
 2. 实现了WebAssembly的新特性 Out of Bounds Trap Handling 在RISC-V后端的支持。
+
+## RUYISDK集成到RISC-V笔记本电脑
+1. 在RISC-V笔记本上安装和运行了如意包管理工具，运行正常。
+2. 基于openEuler 23.09版本的软件包基础依赖情况，实现了如意包管理器的打包，目前已经将相关rpm包提交给RISC-V笔记本组。详见：https://gitlab.inuyasha.love/weilinfox/plct-working/-/blob/master/Done/Month08/Week1/ruyi-rpm.md 
