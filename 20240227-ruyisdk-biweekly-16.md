@@ -8,6 +8,8 @@
 
 ## GCC
 
+更新了RV64ILP32的[工具链仓库](https://github.com/ruyisdk/riscv-gnu-toolchain-rv64ilp32)，同步更新了各个子模块的实现与构建，补充了中文构建使用说明测试文档
+
 ## LLVM
 
 ### T-Head Vector 拓展
