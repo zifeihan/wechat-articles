@@ -2,10 +2,9 @@
 
 ## 卷首语
 
-如意SDK V0.5 版本如期发布，此版本继续扩展了系统安装器支持的 RISC-V 开发板，添加了对 SiFive HiFive Unmatched 、Canaan Kendryte K230  两款RISC-V 开发板的支持，包括镜像信息的维护与下载、开发板系统的安装引导。此外如意软件源更新了使用 th1520 的 plctxthead-linux-gnu。并且集成并发布了 PLCT GNU 小队新发布的 GNU RV64ILP32 工具链。
+如意SDK V0.5 版本如期发布，此版本集成并发布了 PLCT GNU 小队新发布的 GNU RV64ILP32 工具链，并更新了适用 th1520 的 plctxthead-linux-gnu 工具链。继续扩展了系统安装器支持的 RISC-V 开发板，添加了对 SiFive HiFive Unmatched 、Canaan Kendryte K230  两款RISC-V 开发板的支持，包括镜像信息的维护与下载、开发板系统的安装引导。
 
 更多更新详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 如意SDK V0.6 版本将在 3 月 12 日发布。
-
 
 ## 包管理器
 
@@ -60,5 +59,4 @@ OpenJDK RV64 继续持续负责OpenJDK RISC-V相关代码的日常开发、测�
 ## V8
 
 1. 向V8上游提交了RISCV64 Android构建的支持，已合并；
-
 2. 实现了WebAssembly的新特性 Out of Bounds Trap Handling 在RISC-V后端的支持。
