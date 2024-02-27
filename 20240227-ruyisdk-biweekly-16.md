@@ -8,6 +8,24 @@
 
 ## 包管理器
 
+RuyiSDK 0.5 对应的包管理器版本也为 0.5.0，已于今日发布。您可移步
+[GitHub Releases][GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.5.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.5.0/
+
+本次更新主要包含了以下内容：
+
+* 新增了 RV64ILP32 ABI 的裸机工具链实验性支持。详见 `ruyi news`。
+* 修复了 `toolchain/gnu-plct-xthead` 工具链输出的可执行程序无法在 RevyOS 运行的问题。
+* Ruyi 设备安装器：新增支持了 Canaan Kendryte K230 与 SiFive HiFive Unmatched 两款板卡。
+* Ruyi 设备安装器现在完全从 RuyiSDK 软件源拉取配置数据了。这意味着您只需运行
+  `ruyi update` 便可让 Ruyi 设备安装器支持后续新增的板卡、系统组合。
+* 包管理器在下载文件失败后的断点续传现在更加可靠了。
+* 可以自定义 RuyiSDK 软件源的本地存储位置、远端 URL 以及所用分支了，方便您的测试或其他高级使用场景。详见 `ruyisdk/ruyi` 项目的 README。
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
+
 ## IDE
 
 IDE部分主要开展了 Dart 、Chisel RISC-V架构上编译和调试现有插件的调研。Dart 目前可以借助 JIT 或 AOT 在 linux 系统本机编译或运行 RISC-V 目标的程序 (实验性)，不能在本机进行交叉编译 (除 flutter)。
