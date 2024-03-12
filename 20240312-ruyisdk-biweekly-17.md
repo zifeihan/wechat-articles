@@ -2,13 +2,22 @@
 
 ## 卷首语
 
+如意SDK V0.6 版本如期而至，**如意SDK官网上线内测**，网站各基础板块已具备，文档和内容已初步成型。**RISC-V开发板操作系统支持矩阵**一直在持续更新，本期在官网上发布第一版结果。操作系统安装器对已集成的开发板可用操作系统的类型进行了增加。
+
+此外调研了milkv、矽速、沁恒微电子三家厂商的RISC-V产品，开始启动milkv、矽速全产品线支持计划。
+
+更多更新详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 如意SDK V0.7 版本将在 3 月 26 日发布。
+
 ## 包管理器
 
 ## IDE
 
+本期暂无进展。
+
 ## GCC
+
 联合玄铁团队发布了[新32位产品级开源工具链](https://mp.weixin.qq.com/s/argIGP4_rUKDm9IRIB-YTg)，利用64位指令有效减少32位应用的指令数量。
-Zabha扩展patch已被上游接受合入,继续推进gprofng与libmvec库的支持中
+Zabha扩展patch已被上游接受合入,继续推进gprofng与libmvec库的支持中。
 
 ## LLVM
 
@@ -21,6 +30,7 @@ Zabha扩展patch已被上游接受合入,继续推进gprofng与libmvec库的支�
   - 12.6. Vector Narrowing Integer Right Shift Operations
 
 此外，第一阶段交给上游的 PR 已经提交，正在等待上游的响应。自上次更新以来的进度如下：
+
 - 修复了 llvm-objdump 的操作数输出格式问题
 - 将 T-Head Vector 中[新增的汇编指令](https://github.com/T-head-Semi/thead-extension-spec/blob/master/xtheadvector.adoc)与 LLVM MC 合并
 - 针对 MC 部分发起对上游的 PR：[[llvm][mc][riscv] MC support of T-Head vector extension (xtheadvector) #84447](https://github.com/llvm/llvm-project/pull/84447)
@@ -30,6 +40,7 @@ Zabha扩展patch已被上游接受合入,继续推进gprofng与libmvec库的支�
 OpenJDK RV64 继续持续负责OpenJDK RISC-V相关代码的日常开发、测试、代码检视和架构看护。
 
 1. Reviewed JDK-mainline PRs:
+
 - https://github.com/openjdk/jdk/pull/17130 (8322179: RISC-V: Implement SHA-1 intrinsic)
 - https://github.com/openjdk/jdk/pull/17206 (8322790: RISC-V: Tune costs for shuffles with no conversion)
 - https://github.com/openjdk/jdk/pull/17046 (8317721: RISC-V: Implement CRC32 intrinsic)
@@ -48,6 +59,7 @@ OpenJDK RV64 继续持续负责OpenJDK RISC-V相关代码的日常开发、测�
 - https://github.com/openjdk/jdk/pull/17646 (8325024: java/security/cert/CertPathValidator/OCSP/OCSPTimeout.java incorrect comment information)
 
 2. Testing before Rampdown/CodeFreeze for LTS versions: OpenJDK 21.0.3 and OpenJDK 17.0.11
+
 - Run OpenJDK tier1-4 regression tests on Unmatched and Licheepi-4A boards.
 - Run MineCraft and typical Apache softwares (Netbeans, Lucene, Tomcat, Hadoop, Spark)
 
@@ -57,11 +69,10 @@ OpenJDK RV64 继续持续负责OpenJDK RISC-V相关代码的日常开发、测�
 - https://github.com/openjdk/riscv-port-jdk11u/pull/6 (8283929: GHA: Add RISC-V build config)
 - https://github.com/openjdk/jdk11u-dev/pull/2549 (8307955: Prefer to PTRACE_GETREGSET instead of PTRACE_GETREGS in method 'ps_proc.c::process_get_lwp_regs')
 
-## V8
-
 ## 如意官网
 
 如意官网已于3月1日开启内部测试，官网支持：
+
 * 如意SDK介绍
 * 查看支持文档
 * 链接社区
@@ -69,4 +80,10 @@ OpenJDK RV64 继续持续负责OpenJDK RISC-V相关代码的日常开发、测�
 * 订阅如意SDK newsletter
 * 如意SDK下载入口
 * 多语言支持
-  
+
+
+## 操作系统支持矩阵
+
+RISC-V开发板及其支持的操作系统的支持矩阵公开发布第一版，目前已集成到如意官网。
+
+内容详见：https://github.com/ruyisdk/support-matrix
