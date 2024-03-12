@@ -10,6 +10,21 @@
 
 ## 包管理器
 
+RuyiSDK 0.6 对应的包管理器版本也为 0.6.0，已于今日发布。您可移步
+[GitHub Releases][GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.6.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.6.0/
+
+本次更新主要包含了以下内容：
+
+* 不再依赖系统提供的 `git` 命令进行软件源同步了。相应地，您需要确保系统中存在
+  TLS 根证书（例如名为 `ca-certificates` 或类似的包），以及 OpenSSL
+  库；这对我们官方支持的发行版不是问题。
+* `ruyi news` 展示的新闻内容的标题样式更简洁了。
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
+
 ## IDE
 
 本期暂无进展。
