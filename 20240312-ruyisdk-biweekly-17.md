@@ -1,20 +1,17 @@
-# 如意SDK双周进展汇报  第017期·2024年03月12日
+# RuyiSDK双周进展汇报  第017期·2024年03月12日
 
 ## 卷首语
 
-如意SDK V0.6 版本如期而至，**[如意SDK官网](https://ruyisdk.org/)上线内测**，网站各基础板块已具备，文档和内容已初步成型。**RISC-V开发板操作系统支持矩阵**一直在持续更新，本期在官网上发布第一版结果。操作系统安装器对已集成的开发板可用操作系统的类型进行了增加。
+RuyiSDK V0.6 版本如期而至，**[RuyiSDK官网](https://ruyisdk.org/)上线内测**，网站各基础板块已具备，文档和内容已初步成型。**RISC-V开发板操作系统支持矩阵**一直在持续更新，本期在官网上发布第一版结果。操作系统安装器对已集成的开发板可用操作系统的类型进行了增加。
 
 此外调研了milkv、矽速、沁恒微电子三家厂商的RISC-V产品，开始启动milkv、矽速全产品线支持计划。
 
-更多更新详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 如意SDK V0.7 版本将在 3 月 26 日发布。
+更多更新详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 RuyiSDK V0.7 版本将在 3 月 26 日发布。
 
 ## 包管理器
 
 RuyiSDK 0.6 对应的包管理器版本也为 0.6.0，已于今日发布。您可移步
 [GitHub Releases][GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
-
-[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.6.0
-[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.6.0/
 
 本次更新主要包含了以下内容：
 
@@ -84,25 +81,27 @@ OpenJDK RV64 继续持续负责OpenJDK RISC-V相关代码的日常开发、测�
 - https://github.com/openjdk/riscv-port-jdk11u/pull/6 (8283929: GHA: Add RISC-V build config)
 - https://github.com/openjdk/jdk11u-dev/pull/2549 (8307955: Prefer to PTRACE_GETREGSET instead of PTRACE_GETREGS in method 'ps_proc.c::process_get_lwp_regs')
 
-## 如意官网
+## 官网
 
-如意官网已于3月1日开启内部测试，官网支持：
+官网已于3月1日开启内部测试，官网支持：
 
-* 如意SDK介绍
+* RuyiSDK介绍
 * 查看支持文档
 * 链接社区
 * 新闻发布
-* 订阅如意SDK newsletter
-* 如意SDK下载入口
+* 订阅RuyiSDK newsletter
+* RuyiSDK下载入口
 * 多语言支持
 
 官网访问地址：https://ruyisdk.org/
 
 官网仓库：https://github.com/ruyisdk/ruyisdk-website
 
-
 ## 操作系统支持矩阵
 
-RISC-V开发板及其支持的操作系统的支持矩阵公开发布第一版，目前已集成到如意官网。
+RISC-V开发板及其支持的操作系统的支持矩阵公开发布第一版，目前已集成到官网。
 
 内容详见：https://github.com/ruyisdk/support-matrix
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.6.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.6.0/

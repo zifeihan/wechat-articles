@@ -1,19 +1,16 @@
-# 如意SDK双周进展汇报  第016期·2024年02月27日
+# RuyiSDK双周进展汇报  第016期·2024年02月27日
 
 ## 卷首语
 
-如意SDK V0.5 版本如期发布，此版本集成并发布了 PLCT GNU 小队新发布的 GNU RV64ILP32 工具链，并更新了适用 th1520 的 plctxthead-linux-gnu 工具链。继续扩展了系统安装器支持的 RISC-V 开发板，添加了对 SiFive HiFive Unmatched 、Canaan Kendryte K230  两款RISC-V 开发板的支持，包括镜像信息的维护与下载、开发板系统的安装引导。
-此外，在如意SDK集成到RISC-V笔记本方面，完成ruyi包管理工具的安装和使用验证，各功能运行正常。还完成了基于oerv23.09软件包依赖的ruyi包管理器工具的rpm打包工作，在openEuler上可以通过 yum install python3-ruyi 方式完成安装。
+RuyiSDK V0.5 版本如期发布，此版本集成并发布了 PLCT GNU 小队新发布的 GNU RV64ILP32 工具链，并更新了适用 th1520 的 plctxthead-linux-gnu 工具链。继续扩展了系统安装器支持的 RISC-V 开发板，添加了对 SiFive HiFive Unmatched 、Canaan Kendryte K230  两款RISC-V 开发板的支持，包括镜像信息的维护与下载、开发板系统的安装引导。
+此外，在RuyiSDK集成到RISC-V笔记本方面，完成ruyi包管理工具的安装和使用验证，各功能运行正常。还完成了基于oerv23.09软件包依赖的ruyi包管理器工具的rpm打包工作，在openEuler上可以通过 yum install python3-ruyi 方式完成安装。
 
-更多更新详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 如意SDK V0.6 版本将在 3 月 12 日发布。
+更多更新详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 RuyiSDK V0.6 版本将在 3 月 12 日发布。
 
 ## 包管理器
 
 RuyiSDK 0.5 对应的包管理器版本也为 0.5.0，已于今日发布。您可移步
 [GitHub Releases][GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
-
-[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.5.0
-[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.5.0/
 
 本次更新主要包含了以下内容：
 
@@ -41,7 +38,7 @@ Chisel所需的 Verilog仿真器 Verilator 目前在部分Linux（如openEuler�
 
 ### T-Head Vector 拓展
 
-首先是常规进度更新，如意 SDK 分支中的 T-Head Vector 拓展的进度如下：
+首先是常规进度更新，RuyiSDK 分支中的 T-Head Vector 拓展的进度如下：
 
 - 继续完善 LLVM intrinsic 函数，自上次更新以来，新支持了这些类别下的函数：
   - 12.7. Vector Integer Comparison Operations
@@ -58,7 +55,7 @@ Chisel所需的 Verilog仿真器 Verilator 目前在部分Linux（如openEuler�
   - 12.4. Vector Bitwise Logical Operations
   - 12.5. Vector Single-Width Bit Shift Operations
 
-此外，从年后开始，我们已经开始将如意 SDK 中的 T-Head Vector 拓展的代码与 LLVM 上游仓库合并，
+此外，从年后开始，我们已经开始将 RuyiSDK 中的 T-Head Vector 拓展的代码与 LLVM 上游仓库合并，
 并准备在近期向上游提交 PR。计划中初次 PR 的内容包含如下：
 
 - 注册 T-Head Vector 拓展的名字，版本，依赖拓展，以及对应的拓展冲突检测和相关测试（已完成）
@@ -80,6 +77,10 @@ OpenJDK RV64 继续持续负责OpenJDK RISC-V相关代码的日常开发、测�
 1. 向V8上游提交了RISCV64 Android构建的支持，已合并；
 2. 实现了WebAssembly的新特性 Out of Bounds Trap Handling 在RISC-V后端的支持。
 
-## RUYISDK集成到RISC-V笔记本电脑
-1. 在RISC-V笔记本上安装和运行了如意包管理工具，运行正常。
-2. 基于openEuler 23.09版本的软件包基础依赖情况，实现了如意包管理器的打包，目前已经将相关rpm包提交给RISC-V笔记本组。详见：https://gitlab.inuyasha.love/weilinfox/plct-working/-/blob/master/Done/Month08/Week1/ruyi-rpm.md 
+## RuyiSDK 集成到RISC-V笔记本电脑
+
+1. 在RISC-V笔记本上安装和运行了包管理工具 ruyi，运行正常。
+2. 基于openEuler 23.09版本的软件包基础依赖情况，实现了ruyi 包管理器工具的打包，目前已经将相关rpm包提交给RISC-V笔记本组。详见：https://gitlab.inuyasha.love/weilinfox/plct-working/-/blob/master/Done/Month08/Week1/ruyi-rpm.md
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.5.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.5.0/
