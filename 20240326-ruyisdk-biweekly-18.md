@@ -10,7 +10,7 @@
 
 
 ## GCC
-
+香山南湖的微架构支持已合入GCC上游，继续推进RUYISDK多版本GCC的支持工作，更新了“-march=help”特性的支持。
 
 ## LLVM
 
