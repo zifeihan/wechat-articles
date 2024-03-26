@@ -5,6 +5,20 @@
 
 ## 包管理器
 
+RuyiSDK 0.7 对应的包管理器版本也为 0.7.0，已于今日发布。您可移步
+[GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.7.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.7.0/
+
+本次 RuyiSDK 包管理器的更新主要包含了以下内容：
+
+* 修复了在部分系统上找不到 TLS 根证书的问题。
+* Ruyi 设备安装器（`ruyi device provision`）现在可以帮忙制作安装介质（如 LiveUSB）了。
+
+此外，我们完善了持续集成基础设施：从此版本开始，RuyiSDK 包管理器的所有版本发布将以自动化方式完成了。这有助于我们更高效、更可靠地推进开发工作、解决问题。
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
 
 ## IDE
 
