@@ -55,6 +55,45 @@ RuyiSDK 0.8 对应的包管理器版本也为 0.8.0，已于今日发布。您�
 
 ## OpenJDK
 
+1. Get familar with virtual thread pinning issue (Virtual Thread’s Next Steps: https://fosdem.org/2024/schedule/event/fosdem-2024-3255-virtual-thread-s-next-steps/ )
+
+2. Proposed riscv-port-jdk11u backport PRs to fix GHA linux-cross-build (linux-riscv64) failure:
+- https://github.com/openjdk/riscv-port-jdk11u/pull/14 (8326960: GHA: RISC-V sysroot cannot be debootstrapped due to ongoing Debian t64 transition)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/15 (8328948: GHA: Restoring sysroot from cache skips the build after JDK-8326960)
+
+3. Reviewed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/17698 (8320646: RISC-V: C2 VectorCastHF2F)
+- https://github.com/openjdk/jdk/pull/17820 (8321282: RISC-V: SpinPause() not implemented)
+- https://github.com/openjdk/jdk/pull/17889 (8321075: RISC-V: UseSystemMemoryBarrier lacking proper OS support)
+- https://github.com/openjdk/jdk/pull/17924 (8326235: RISC-V: Size CodeCache for short calls encoding)
+- https://github.com/openjdk/jdk/pull/17750 (8324124: RISC-V: implement _vectorizedMismatch intrinsic)
+- https://github.com/openjdk/jdk/pull/17964 (8322962: Upcall stub might go undetected when freezing frames)
+- https://github.com/openjdk/jdk/pull/17554 (8319900: Recursive lightweight locking: riscv64 implementation)
+- https://github.com/openjdk/jdk/pull/18039 (8326936: RISC-V: Shenandoah GC crashes due to incorrect atomic memory operations)
+- https://github.com/openjdk/jdk/pull/18070 (8327058: RISC-V: make Zcb experimental)
+- https://github.com/openjdk/jdk/pull/18114 (8327283: RISC-V: Minimal build failed after JDK-8319716)
+- https://github.com/openjdk/jdk/pull/18131 (8327426: RISC-V: Move alignment shim into initialize_header() in C1_MacroAssembler::allocate_array)
+- https://github.com/openjdk/jdk/pull/18169 (8327689: RISC-V: adjust test filters of zfh extension)
+- https://github.com/openjdk/jdk/pull/18075 (8326983: Unused operands reported after JDK-8326135)
+
+4. Reviewed JDK21u upstream PRs:
+- https://github.com/openjdk/jdk21u-dev/pull/294 (8321075: RISC-V: UseSystemMemoryBarrier lacking proper OS support)
+
+5. Reviewed JDK11u upstream PRs:
+- https://github.com/openjdk/jdk11u-dev/pull/2549 (8307955: Prefer to PTRACE_GETREGSET instead of PTRACE_GETREGS in method 'ps_proc.c::process_get_lwp_regs')
+
+6. Reviewed riscv-port-jdk11u backport PRs:
+- https://github.com/openjdk/riscv-port-jdk11u/pull/6 (8283929: GHA: Add RISC-V build config)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/7 (8290496: riscv: Fix build warnings-as-errors with GCC 11)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/9 (JDK-8327284: Use correct register in riscv_enc_fast_unlock())
+- https://github.com/openjdk/riscv-port-jdk11u/pull/10 (8316645: RISC-V: Remove dependency on libatomic by adding cmpxchg 1b)
+
+7. OpenJDK PRs
+- https://github.com/openjdk/jdk/pull/18370 (8328404: RISC-V: Fix potential crash in C2_MacroAssembler::arrays_equals)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/9 (8327284: Use correct register in riscv_enc_fast_unlock())
+- https://github.com/openjdk/riscv-port-jdk11u/pull/11 (8328065: RISC-V: Add isolation for shared code changes)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/12 (8328580: Remove trivial shared code changes which are leftover from riscv port)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/13 (8283865: riscv: Break down -XX:+UseRVB into seperate options for each bitmanip extension)
 
 ## V8
 
