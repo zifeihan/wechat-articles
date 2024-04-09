@@ -14,6 +14,16 @@
 
 ## LLVM
 
+### T-Head Vector 拓展
+
+- 继续完善 LLVM intrinsic 函数，自上次更新以来，新支持了这些类别下的函数：
+  - 14.1. Vector Single-Width Floating-Point Add/Subtract Operations
+  - 14.3. Vector Single-Width Floating-Point Multiply/Divide Operations
+- 继续完善 Clang intrinsic 函数，自上次更新以来，新支持了这些类别下的函数：
+  - 13.1. Vector Single-Width Saturating Add and Subtract
+  - 13.5. Vector Narrowing Fixed-Point Clip Operations
+
+此外，本次将 T-Head Vector 分支 rebase 到了 LLVM 17.0.6 版本。
 
 ## OpenJDK
 
