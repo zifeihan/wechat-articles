@@ -30,6 +30,8 @@ RuyiSDK 0.8 对应的包管理器版本也为 0.8.0，已于今日发布。您�
 
 ## GCC
 
+修复了Zicond扩展与新版本newlib不兼容的问题，协助解决了B-type指令的添加问题，
+补充了香山Branch流水线的指令支持类型，继续集成新的RISC-V特性到RUYISDK GNU工具链中。
 
 ## LLVM
 
