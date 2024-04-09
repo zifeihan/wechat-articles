@@ -49,6 +49,11 @@ RuyiSDK 0.8 对应的包管理器版本也为 0.8.0，已于今日发布。您�
 
 ## 官网
 
+RuyiSDK官网正式上线了！欢迎访问官网，了解更多关于RuyiSDK的信息，点击网站下方的订阅，获得我们的最新消息或者加入社区。
+
+官网访问地址：https://ruyisdk.org/
+
+官网仓库：https://github.com/ruyisdk/ruyisdk-website
 
 ## 操作系统支持矩阵
 
