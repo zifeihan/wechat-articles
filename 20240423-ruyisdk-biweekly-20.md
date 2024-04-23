@@ -30,7 +30,7 @@ RuyiSDK 0.9 对应的包管理器版本也为 0.9.0，已于今日发布。您�
 
 
 ## GCC
-
+继续维护RUYISDK GCC的版本支持，修复了gcc12构建时的一些问题，正在同步最新的GCC14 release特性。
 
 ## LLVM
 
