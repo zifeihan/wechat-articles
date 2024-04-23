@@ -1,7 +1,11 @@
 # RuyiSDK双周进展汇报  第020期·2024年04月23日
 
 ## 卷首语
+RuyiSDK V0.9 版本已于今日发布。 **RuyiSDK 完成了对矽速现有 RISC-V 全产品线的调研，并在设备系统安装器中添加支持**，除RISCV FPGA 系列中无RISC-V硬核的开发板，均已集成到RuyiSDK中。同时，**完成了对 嘉楠勘智 K510 的支持**。
 
+近期提交了[**基于17.0.6版本添加xtheadvector支持的LLVM工具链**](https://github.com/ruyisdk/llvm-project/tree/rebase-17.0.6)，这一支持后续也将集成到RuyiSDK中。此外，包管理器工具针对开发板镜像或SDK格式多元化的特点，修复了多文件压缩包下载时的bug，增加lz4压缩格式解包等。RuyiSDK更多进展细节详见下方详情，欢迎大家试用并提供反馈和建议。
+
+下一个开发版本 RuyiSDK V0.10 版本将在 5 月 14 日发布。
 
 ## 包管理器
 
@@ -27,7 +31,7 @@ RuyiSDK 0.9 对应的包管理器版本也为 0.9.0，已于今日发布。您�
 欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
 
 ## IDE
-
+本期暂无进展。
 
 ## GCC
 继续维护RUYISDK GCC的版本支持，修复了gcc12构建时的一些问题，正在同步最新的GCC14 release特性。
@@ -87,10 +91,12 @@ RuyiSDK 0.9 对应的包管理器版本也为 0.9.0，已于今日发布。您�
 
 
 ## V8
-
+解决了指针压缩开启后，32位指针与0比较时依然使用64位比较指令的bug。
+使用RISC-V提供的sys_riscv_hwprobe 系统调用来进行运行时指令集的探测。
 
 ## 官网
-
 本期暂无进展。
 
 ## 操作系统支持矩阵
+新增对 Canaan Kendryte K510、Sipeed Tang Mega 138K Pro 等开发板的系统支持情况调研。基于矽速各开发板展开测试验证，输出测试报告。
+内容详见：https://github.com/ruyisdk/support-matrix
