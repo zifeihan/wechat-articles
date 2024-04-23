@@ -61,6 +61,30 @@ RuyiSDK 0.9 对应的包管理器版本也为 0.9.0，已于今日发布。您�
 
 ## OpenJDK
 
+1. Proposed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/18558 (8329355: Test compiler/c2/irTests/TestIfMinMax.java fails on RISC-V)
+- https://github.com/openjdk/jdk/pull/18611 (8329641: RISC-V: Enable some tests related to SHA-2 instrinsic)
+- https://github.com/openjdk/jdk/pull/18668 (8329823: RISC-V: Need to sync CPU features with related JVM flags)
+- https://github.com/openjdk/jdk22u/pull/135 (8329823: RISC-V: Need to sync CPU features with related JVM flags)
+- https://github.com/openjdk/jdk21u-dev/pull/472 (8315652: RISC-V: Features string uses wrong separator for jtreg)
+- https://github.com/openjdk/jdk17u-dev/pull/2377 (8315652: RISC-V: Features string uses wrong separator for jtreg)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/16 (8291893: riscv: remove fence.i used in user space)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/17 (8284937: riscv: should not allocate special register for temp)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/18 (8285303: riscv: Incorrect register mask in call_native_base)
+
+2. Reviewed JDK-mainline PRs:
+- https://github.com/openjdk/jdk/pull/17745 (8321010: RISC-V: C2 RoundVF)
+- https://github.com/openjdk/jdk/pull/18040 (8321021: RISC-V: C2 VectorUCastB2X)
+- https://github.com/openjdk/jdk/pull/18175 (8327716: RISC-V: Change type of vector_length param of several assembler functions from int to uint)
+- https://github.com/openjdk/jdk/pull/18191 (8327794: RISC-V: enable extension features based on impid (Rivos specific change))
+- https://github.com/openjdk/jdk/pull/18370 (8328404: RISC-V: Fix potential crash in C2_MacroAssembler::arrays_equals)
+- https://github.com/openjdk/jdk/pull/18435 (8326960: GHA: RISC-V sysroot cannot be debootstrapped due to ongoing Debian t64 transition)
+- https://github.com/openjdk/jdk/pull/18382 (8317720: RISC-V: Implement Adler32 intrinsic)
+- https://github.com/openjdk/jdk/pull/18599 (8329083: RISC-V: Update profiles supported on riscv)
+- https://github.com/openjdk/jdk/pull/18611 (8329641: RISC-V: Enable some tests related to SHA-2 instrinsic)
+- https://github.com/openjdk/jdk/pull/18668 (8329823: RISC-V: Need to sync CPU features with related JVM flags)
+- https://github.com/openjdk/jdk/pull/18445 (8327743: JVM crash in hotspot/share/runtime/javaThread.cpp - failed: held monitor count should be equal to jni: 0 != 1)
+
 
 ## V8
 
