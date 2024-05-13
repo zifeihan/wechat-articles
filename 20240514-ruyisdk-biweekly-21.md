@@ -7,6 +7,7 @@
 ## IDE
 
 ## GCC
+更新了RUYISDK GCC14分支，目前正在rebase rv64ilp32/SIMD/Profiles等特性中。
 
 ## LLVM
 
