@@ -17,3 +17,39 @@
 ## 官网
 
 ## 操作系统支持矩阵
+
+新增部分全志、芯来开发板的系统支持情况调研；基于现有开发板和相关文档展开测试验证，产出测试报告。
+
+- Milk-V Duo S 
+    - NuttX
+        - 新版本重新测试
+    - BuildRoot
+    - Debian
+- CanMV / Kendryte K230
+    - NuttX
+    - RT-Thread
+- StarFive VisionFive 2
+    - NuttX
+- Maix-I K210
+    - NuttX
+- Nuclei DDR200T
+    - FreeRTOS
+    - RT-Thread
+- Longan Nano
+    - RT-Thread
+- RV Star
+    - FreeRTOS
+    - RT-Thread
+- 100ASK-V853-PRO (Allwinner V853)
+    - Melis
+- CM32M433R-START
+    - FreeRTOS
+    - RT-Thread
+- TinyVision
+    - Melis
+- Allwinner V853
+    - Melis
+- Youmu Pi
+    - Melis
+
+内容请详见：[ruyisdk/support-matrix](https://github.com/ruyisdk/support-matrix)
