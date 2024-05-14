@@ -2,19 +2,29 @@
 
 ## 卷首语
 
+RuyiSDK V0.10 版本已于今日发布。 **如意软件源仓库发布了PLCT实验室提交的支持T-Head Vector的LLVM 17.0.6 版本**。RISC-V设备集成与支持方面，**RuyiSDK 完成了对沁恒微电子现有 RISC-V 全产品系列的调研，并在设备系统安装器中添加支持。** 此外，**全志、芯来**RISC-V处理器的开发板也已经加入集成设备清单，目前相关开发板大部分已经完成调研，接下来也会集成到如意设备安装器中。
+
+为了完善国内注册功能，如意官网在进一步的完善后端服务端和推进ruyisdk.cn域名备案。RuyiSDK推广工作也开始筹备，**RuyiSDK社区首次线下 Meetup 完成筹备，将于 5月18 举办**。
+
+RuyiSDK更多进展细节详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 RuyiSDK V0.11 版本将在 5 月 28 日发布。
+
 ## 包管理器
 
 ## IDE
 
+本期无可见交付进展。
+
 ## GCC
+
 更新了RUYISDK GCC14分支，目前正在rebase rv64ilp32/SIMD/Profiles等特性中。
 
 ## LLVM
 
 - 增加针对 T-Head Vector 的优化 Pass
-  - 增加了 `RedundantVSETVLIElimination` 优化过程，用于消除冗余的 `vsetvli` 指令
 
+  - 增加了 `RedundantVSETVLIElimination` 优化过程，用于消除冗余的 `vsetvli` 指令
 - 继续完善 LLVM intrinsic 函数，自上次更新以来，新支持了这些类别下的函数：
+
   - 14.1. Vector Single-Width Floating-Point Add/Subtract Operations
   - 14.2. Vector Widening Floating-Point Add/Subtract Operations
   - 14.3. Vector Single-Width Floating-Point Multiply/Divide Operations
@@ -39,6 +49,7 @@
   - 17.5. Vector Register Gather Operations
   - 17.6. Vector Compress Operations
 - 继续完善 Clang intrinsic 函数，自上次更新以来，新支持了这些类别下的函数：
+
   - 14.1. Vector Single-Width Floating-Point Add/Subtract Operations
   - 14.2. Vector Widening Floating-Point Add/Subtract Operations
   - 14.3. Vector Single-Width Floating-Point Multiply/Divide Operations
@@ -54,7 +65,9 @@
   - 17.6. Vector Compress Operations
 
 ## OpenJDK
+
 1. OpenJDK PRs:
+
 - Initial version: https://github.com/RealFYang/loom/commit/56746e7b9b2e20c999427201479b03f97eac805c (RISC-V vthread support for JVM intrinsic monitors)
 - https://github.com/openjdk/jdk/pull/18737 (8330095: RISC-V: Remove obsolete vandn_vi instruction)
 - https://github.com/openjdk/jdk/pull/18780 (8330242: RISC-V: Simplify and remove CORRECT_COMPILER_ATOMIC_SUPPORT in atomic_linux_riscv.hpp)
@@ -64,6 +77,7 @@
 - https://github.com/openjdk/jdk17u-dev/pull/2417 (8326936: RISC-V: Shenandoah GC crashes due to incorrect atomic memory operations)
 
 2. Reviewed riscv-port-jdk11u backport PRs:
+
 - https://github.com/openjdk/riscv-port-jdk11u/pull/11 (8328065: RISC-V: Add isolation for shared code changes)
 - https://github.com/openjdk/riscv-port-jdk11u/pull/12 (8328580: Remove trivial shared code changes which are leftover from riscv port)
 - https://github.com/openjdk/riscv-port-jdk11u/pull/13 (8283865: riscv: Break down -XX:+UseRVB into seperate options for each bitmanip extension)
@@ -73,48 +87,55 @@
 - https://github.com/openjdk/riscv-port-jdk11u/pull/19 (8297697: RISC-V: Add support for SATP mode detection)
 
 3. CFV: New RISC-V Port Committer: Gui Cao
-- https://mail.openjdk.org/pipermail/riscv-port-dev/2024-April/001345.html 
-- https://mail.openjdk.org/pipermail/riscv-port-dev/2024-April/001367.html 
+
+- https://mail.openjdk.org/pipermail/riscv-port-dev/2024-April/001345.html
+- https://mail.openjdk.org/pipermail/riscv-port-dev/2024-April/001367.html
 
 ## V8
 
+1. 新增fastcall特性的JavaScript可重入特性。
+2. 修复内置模拟器RVV寄存器内容未初始化、指针压缩开启后，32位模式下指针判零等bug。
+
 ## 官网
+
 [RuyiSDK社区首次线下 Meetup来啦，5月18日软件所见！](https://mp.weixin.qq.com/s/NAWuUF4ggmmDvPvKkznkOw)
+
+为了完善国内注册功能，如意官网在进一步的完善后端服务端和推进ruyisdk.cn域名备案。
 
 ## 操作系统支持矩阵
 
 新增部分全志、芯来开发板的系统支持情况调研；基于现有开发板和相关文档展开测试验证，产出测试报告。
 
-- Milk-V Duo S 
-    - NuttX
-        - 新版本重新测试
-    - BuildRoot
-    - Debian
+- Milk-V Duo S
+  - NuttX
+    - 新版本重新测试
+  - BuildRoot
+  - Debian
 - CanMV / Kendryte K230
-    - NuttX
-    - RT-Thread
+  - NuttX
+  - RT-Thread
 - StarFive VisionFive 2
-    - NuttX
+  - NuttX
 - Maix-I K210
-    - NuttX
+  - NuttX
 - Nuclei DDR200T
-    - FreeRTOS
-    - RT-Thread
+  - FreeRTOS
+  - RT-Thread
 - Longan Nano
-    - RT-Thread
+  - RT-Thread
 - RV Star
-    - FreeRTOS
-    - RT-Thread
+  - FreeRTOS
+  - RT-Thread
 - 100ASK-V853-PRO (Allwinner V853)
-    - Melis
+  - Melis
 - CM32M433R-START
-    - FreeRTOS
-    - RT-Thread
+  - FreeRTOS
+  - RT-Thread
 - TinyVision
-    - Melis
+  - Melis
 - Allwinner V853
-    - Melis
+  - Melis
 - Youmu Pi
-    - Melis
+  - Melis
 
 内容请详见：[ruyisdk/support-matrix](https://github.com/ruyisdk/support-matrix)
