@@ -58,6 +58,7 @@
 ## V8
 
 ## 官网
+[RuyiSDK社区首次线下 Meetup来啦，5月18日软件所见！](https://mp.weixin.qq.com/s/NAWuUF4ggmmDvPvKkznkOw)
 
 ## 操作系统支持矩阵
 
