@@ -4,6 +4,34 @@
 
 ## 包管理器
 
+RuyiSDK 0.10 对应的包管理器版本也为 0.10.0，已于今日发布。您可移步
+[GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.10.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.10.0/
+
+本次 RuyiSDK 包管理器的更新主要包含了以下内容：
+
+* 支持了全局选项 `--porcelain` 以方便外部程序与 `ruyi` 交互。初期适配了
+  `ruyi list` 与 `ruyi news list` 两种操作。
+* `ruyi news` 在某条新闻存在当前系统语言翻译版本时，会优先展示此语言版本了。
+
+本次 RuyiSDK 软件源的更新主要包含了以下内容：
+
+* 新增打包了 PLCT 维护的 LLVM 工具链 `toolchain/llvm-plct`，主要特色是
+  `XTHeadVector` 支持。
+* 新增支持了大量沁恒微电子（WCH）RISC-V MCU 评估板。Ruyi 设备安装器现已新增支持以下设备型号：
+    * WCH CH32V103 评估板
+    * WCH CH32V203 评估板
+    * WCH CH32V208 评估板
+    * WCH CH32V303 评估板
+    * WCH CH32V305 评估板
+    * WCH CH32V307 评估板
+    * WCH CH582F 评估板
+    * WCH CH592X 评估板
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
+
 ## IDE
 
 ## GCC
