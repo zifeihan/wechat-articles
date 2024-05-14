@@ -54,6 +54,27 @@
   - 17.6. Vector Compress Operations
 
 ## OpenJDK
+1. OpenJDK PRs:
+- Initial version: https://github.com/RealFYang/loom/commit/56746e7b9b2e20c999427201479b03f97eac805c (RISC-V vthread support for JVM intrinsic monitors)
+- https://github.com/openjdk/jdk/pull/18737 (8330095: RISC-V: Remove obsolete vandn_vi instruction)
+- https://github.com/openjdk/jdk/pull/18780 (8330242: RISC-V: Simplify and remove CORRECT_COMPILER_ATOMIC_SUPPORT in atomic_linux_riscv.hpp)
+- https://github.com/openjdk/jdk22u/pull/146 (8330242: RISC-V: Simplify and remove CORRECT_COMPILER_ATOMIC_SUPPORT in atomic_linux_riscv.hpp)
+- https://github.com/openjdk/jdk21u-dev/pull/507 (8326936: RISC-V: Shenandoah GC crashes due to incorrect atomic memory operations)
+- https://github.com/openjdk/jdk17u-dev/pull/2385 (8329823: RISC-V: Need to sync CPU features with related JVM flags)
+- https://github.com/openjdk/jdk17u-dev/pull/2417 (8326936: RISC-V: Shenandoah GC crashes due to incorrect atomic memory operations)
+
+2. Reviewed riscv-port-jdk11u backport PRs:
+- https://github.com/openjdk/riscv-port-jdk11u/pull/11 (8328065: RISC-V: Add isolation for shared code changes)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/12 (8328580: Remove trivial shared code changes which are leftover from riscv port)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/13 (8283865: riscv: Break down -XX:+UseRVB into seperate options for each bitmanip extension)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/16 (8291893: riscv: remove fence.i used in user space)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/17 (8284937: riscv: should not allocate special register for temp)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/18 (8285303: riscv: Incorrect register mask in call_native_base)
+- https://github.com/openjdk/riscv-port-jdk11u/pull/19 (8297697: RISC-V: Add support for SATP mode detection)
+
+3. CFV: New RISC-V Port Committer: Gui Cao
+- https://mail.openjdk.org/pipermail/riscv-port-dev/2024-April/001345.html 
+- https://mail.openjdk.org/pipermail/riscv-port-dev/2024-April/001367.html 
 
 ## V8
 
