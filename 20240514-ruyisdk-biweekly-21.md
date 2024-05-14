@@ -10,6 +10,48 @@
 
 ## LLVM
 
+- 增加针对 T-Head Vector 的优化 Pass
+  - 增加了 `RedundantVSETVLIElimination` 优化过程，用于消除冗余的 `vsetvli` 指令
+
+- 继续完善 LLVM intrinsic 函数，自上次更新以来，新支持了这些类别下的函数：
+  - 14.1. Vector Single-Width Floating-Point Add/Subtract Operations
+  - 14.2. Vector Widening Floating-Point Add/Subtract Operations
+  - 14.3. Vector Single-Width Floating-Point Multiply/Divide Operations
+  - 14.4. Vector Widening Floating-Point Multiply Operations
+  - 14.5. Vector Single-Width Floating-Point Fused Multiply-Add Operations
+  - 14.6. Vector Widening Floating-Point Fused Multiply-Add Operations
+  - 14.7. Vector Floating-Point Square-Root Operations
+  - 14.8. Vector Floating-Point Reciprocal Square-Root Estimate Operations
+  - 14.9. Vector Floating-Point Reciprocal Estimate Operations
+  - 14.10. Vector Floating-Point MIN/MAX Operations
+  - 14.11. Vector Floating-Point Sign-Injection Operations
+  - 14.12. Vector Floating-Point Compare Operations
+  - 14.13. Vector Floating-Point Classify Operations
+  - 14.14. Vector Floating-Point Merge Operations
+  - 14.15. Vector Floating-Point Move Operations
+  - 14.16. Single-Width Floating-Point/Integer Type-Convert Operations
+  - 14.17. Widening Floating-Point/Integer Type-Convert Operations
+  - 14.18. Narrowing Floating-Point/Integer Type-Convert Operations
+  - 17.2. Integer Scalar Move Operations
+  - 17.3. Floating-Point Scalar Move Operations
+  - 17.4. Vector Slide Operations
+  - 17.5. Vector Register Gather Operations
+  - 17.6. Vector Compress Operations
+- 继续完善 Clang intrinsic 函数，自上次更新以来，新支持了这些类别下的函数：
+  - 14.1. Vector Single-Width Floating-Point Add/Subtract Operations
+  - 14.2. Vector Widening Floating-Point Add/Subtract Operations
+  - 14.3. Vector Single-Width Floating-Point Multiply/Divide Operations
+  - 14.4. Vector Widening Floating-Point Multiply Operations
+  - 14.5. Vector Single-Width Floating-Point Fused Multiply-Add Operations
+  - 14.6. Vector Widening Floating-Point Fused Multiply-Add Operations
+  - 15.1. Vector Single-Width Integer Reduction Operations
+  - 15.2. Vector Widening Integer Reduction Operations
+  - 15.3. Vector Single-Width Floating-Point Reduction Operations
+  - 15.4. Vector Widening Floating-Point Reduction Operations
+  - 17.4. Vector Slide Operations
+  - 17.5. Vector Register Gather Operations
+  - 17.6. Vector Compress Operations
+
 ## OpenJDK
 
 ## V8
