@@ -23,5 +23,6 @@
 
 ## 官网
 
+[RuyiSDK 首次线下 Meetup 圆满结束，下次见！](https://mp.weixin.qq.com/s/wHCKdaZLcEyn7CspkIoEmQ)
 
 ## 操作系统支持矩阵
