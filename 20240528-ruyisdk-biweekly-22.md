@@ -10,7 +10,7 @@
 
 
 ## GCC
-
+更新了RV64ILP32的支持，，包括Binutils,QEMU,说明文档等，发布了新的release工具版本。
 
 ## LLVM
 
