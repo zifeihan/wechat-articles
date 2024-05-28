@@ -5,6 +5,24 @@
 
 ## 包管理器
 
+RuyiSDK 0.11 对应的包管理器版本也为 0.11.0，已于今日发布。您可移步
+[GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.11.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.11.0/
+
+本次 RuyiSDK 包管理器的更新主要包含了以下内容：
+
+* 去除了先前唯一的 LGPL 依赖。现在 RuyiSDK 包管理器及其所有依赖都采用宽松开源许可证了，方便下游用户在商业场景取用。
+
+本次 RuyiSDK 软件源的更新主要包含了以下内容：
+
+* Ruyi 设备安装器现已新增支持以下设备型号：
+    * Pine64 Star64
+
+我们注意到越来越多的设备型号，甚至如最新面世的 BananaPi BPI-F3 等等，其系统镜像仅以网盘（百度网盘、Google Drive、MEGA 等服务）方式分发。对这些设备型号的妥善支持面临挑战；在接下来的版本迭代中，我们将尝试支持此场景，敬请期待或参与进来。
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
 
 ## IDE
 
