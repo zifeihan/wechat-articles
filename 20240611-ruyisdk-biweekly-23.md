@@ -7,6 +7,7 @@
 ## IDE
 
 ## GCC
+支持了Zimop, Zfbfmin等多个新扩展，更新修复了GCC14的部分回归测试问题。
 
 ## LLVM
 
