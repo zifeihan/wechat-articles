@@ -4,6 +4,24 @@
 
 ## 包管理器
 
+RuyiSDK 0.12 对应的包管理器版本也为 0.12.0，已于今日发布。您可移步
+[GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.12.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.12.0/
+
+本次 RuyiSDK 包管理器的更新主要包含了以下内容：
+
+* 修复了先前 Pine64 Star64 Armbian 镜像无法下载的问题。
+* 对于部分必须由用户手工下载的文件，支持了相应的用户体验：按照当前系统语言设置，渲染相应的提示语。
+* 升级了 pygit2 依赖库版本到 1.5.0，以支持 libgit2 的 1.8 版本。
+* 修复了 `XDG_STATE_HOME` 环境变量被无视的问题。
+
+为了支持刷写方式复杂、需要夹杂人工干预、镜像文件需要手工下载等复杂情况下的设备初始化，我们正在对设备安装器进行重构，预计将于下个版本付诸测试。届时旧版
+`ruyi` 的设备安装器功能将不可用，请先升级再进行体验。
+
+欢迎试用或来上游围观；您的需求是我们迭代开发的目标和动力。
+
 ## IDE
 
 ## GCC
