@@ -2,13 +2,16 @@
 
 ## 卷首语
 
+RuyiSDK V0.12 版本已于今日发布。 在这个版本中，操作系统支持矩阵为**3款开发板新增了其支持的操作系统**，RuyiSDK包管理器本期重点修复并完善了一些缺陷，并**增加了Ubuntu 24.04 LTS 系统的支持和测试**；官网建设方面申请了公用邮箱contact@ruyisdk.cn，优化了订阅体验。
+
+RuyiSDK 目前采用先调研摸底、然后包管理器集成支持（含设备安装器集成支持）、再IDE集成支持的大致路线推进。前期初步完成了首批RISC-V开发板的初步调研（50款），并优先在包管理器和安装器中提供了集成化的系统镜像安装服务。随着RuyiSDK对开发板的深入支持，计划与厂商对接，一起合作推动相关工作的开展。
+
+RuyiSDK更多进展细节详见下方详情，欢迎大家试用并提供反馈和建议。下一个开发版本 RuyiSDK V0.13 版本将在 6 月 25 日发布。
+
 ## 包管理器
 
 RuyiSDK 0.12 对应的包管理器版本也为 0.12.0，已于今日发布。您可移步
-[GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
-
-[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.12.0
-[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.12.0/
+[GitHub Releases][GitHub Releases] 或 [ISCAS 镜像源][iscas]下载体验。
 
 本次 RuyiSDK 包管理器的更新主要包含了以下内容：
 
@@ -24,7 +27,10 @@ RuyiSDK 0.12 对应的包管理器版本也为 0.12.0，已于今日发布。您
 
 ## IDE
 
+基于VSCode IDE，以及包管理器提供的数据接口，在VSCode中实现获取全部的environment。
+
 ## GCC
+
 支持了Zimop, Zfbfmin等多个新扩展，更新修复了GCC14的部分回归测试问题。
 
 ## LLVM
@@ -40,14 +46,20 @@ RuyiSDK 0.12 对应的包管理器版本也为 0.12.0，已于今日发布。您
 
 ## V8
 
+1. 继续添加TurboShaft IR的指令选择支持。
+2. 添加WASM新特性JSPI的支持。
+
 ## OpenJDK
+
 1. Proposed JDK-mainline PRs:
+
 - https://github.com/openjdk/jdk/pull/18716 (8329258: TailCall should not use frame pointer register for jump target)
 - https://github.com/openjdk/jdk/pull/19313 (8332533: RISC-V: Enable vector variable shift instructions for machines with RVV)
 - https://github.com/openjdk/jdk/pull/19328 (8332615: RISC-V: Support vector unsigned comparison instructions for machines with RVV)
 - https://github.com/openjdk/jdk/pull/19415 (8333006: RISC-V: C2: Support vector-scalar and vector-immediate arithmetic instructions)
 
 2. Reviewed JDK-mainline PRs:
+
 - https://github.com/openjdk/jdk/pull/18737 (8330095: RISC-V: Remove obsolete vandn_vi instruction)
 - https://github.com/openjdk/jdk/pull/18774 (8330213: RISC-V: C2: assert(false) failed: bad AD file after JDK-8316991)
 - https://github.com/openjdk/jdk/pull/18780 (8330242: RISC-V: Simplify and remove CORRECT_COMPILER_ATOMIC_SUPPORT in atomic_linux_riscv.hpp)
@@ -65,6 +77,10 @@ RuyiSDK 0.12 对应的包管理器版本也为 0.12.0，已于今日发布。您
 
 ## 官网
 
+增加了contact@ruyisdk.cn邮箱，优化了订阅体验。
+
+截止今日6月11日，订阅人数一共33人（增加1人）。RuyiSDK网站访问人数291人（增加114人），访问页面848次（增加440次）。
+
 ## 操作系统支持矩阵
 
 本周在支持矩阵中新增了更多开发板和操作系统：
@@ -74,3 +90,6 @@ RuyiSDK 0.12 对应的包管理器版本也为 0.12.0，已于今日发布。您
 - D1: Arch Linux
 
 内容请详见：[ruyisdk/support-matrix](https://github.com/ruyisdk/support-matrix)
+
+[GitHub Releases]: https://github.com/ruyisdk/ruyi/releases/tag/0.12.0
+[iscas]: https://mirror.iscas.ac.cn/ruyisdk/ruyi/releases/0.12.0/
